@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<b>Using Javascript object constructors</b><p id="person"></p>
+<b>Using arrow Functions</b><p id="demo"></p>
+<script>
+
+function Person(first, last, age, nationaltiy) {
+
+ 
+  this.firstName = first;
+  this.lastName = last;
+  this.Age = age;
+  this.Nationaltiy = nationaltiy;
+}
+
+const Person1 = new Person("Sam", "Manueal", "50", "Indian");
+
+
+document.getElementById("person").innerHTML =
+"Full name of the Person is " + Person1.firstName +" "+ Person1.lastName  +"<br>"+"Age is "+ Person1.Age +"<br>"+"Nationality is "+Person1.Nationaltiy ; 
+
+
+var person;
+
+person = (fname,lname,age,nationality) => "Person's full name is " + fname +" "+ lname+"<br>"+"Age is "+age+"<br>"+"Nationality is "+nationality;
+
+document.getElementById("demo").innerHTML = person("Sam", "Manueal", "56","Indian");
+</script>
+
+</body>
+</html>
